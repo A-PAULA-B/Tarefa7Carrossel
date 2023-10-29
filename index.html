@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>carrossel</title>
+  
+  <style>
+    body {
+      background: #f7f4f4;
+      text-align: center;
+      color: rgb(94, 3, 117);
+      font-weight: bold;
+      font-size: 40px;
+    }
+
+    #carrossel,
+    ul {
+      height: 600px;
+    }
+
+    #carrossel {
+
+      position: relative;
+      width: 600px;
+      height: 500px;
+      margin: 370px;
+      overflow: hidden;
+      margin-top: 10px;
+      box-shadow: 5px 5px 10px 15px rgb(94, 3, 117);
+    }
+
+    #carrossel li {
+      float: left;
+      height: 300px;
+      position: relative;
+      width: 600px;
+    }
+
+    #carrossel ul {
+      position: relative;
+      left: 10px;
+      top: -50px;
+      width: 9000px;
+      list-style: none;
+      margin-left: -50px;
+      transition: left 0.3s linear;
+    }
+
+    .carrossel-container {
+      
+      width: 100%;
+    }
+
+    .carrossel-container img {
+      background-size: 100%;
+      width: 100%;
+      padding: 0 10px;
+    }
+
+    #carrossel ul {
+      animation: slide 15s infinite;
+    }
+
+    @keyframes slide {
+      20% {
+        left: 0;
+      }
+
+      25% {
+        left: -600px;
+      }
+
+      45% {
+        left: -600px;
+      }
+
+      50% {
+        left: -1200px;
+      }
+
+      70% {
+        left: -1200px;
+      }
+
+      75% {
+        left: -1800px;
+      }
+
+      98% {
+        left: -1800px;
+      }
+
+      100% {
+        left: 0;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <p>CAMISETAS INFANTIL</p>
+  <div id="carrossel">
+    <ul>
+      <li>
+        <div class="carrossel-container">
+          <img src="131624558_223012816007209_2494487448449228228_n.jpg" alt="img1" />
+        </div>
+      </li>
+
+      <li>
+        <div class="carrossel-container">
+          <img src="132181358_222394612735696_195771872173233842_n.jpg" alt="img1" />
+        </div>
+      </li>
+
+      <li>
+        <div class="carrossel-container">
+          <img src="169085297_339631227678700_5515323477427652899_n.jpg" alt="img1" />
+        </div>
+      </li>
+      <li>
+        <div class="carrossel-container">
+          <img src="193339141_339628894345600_5214450596342544400_n.jpg" alt="img1" />
+        </div>
+      </li>
+      <li>
+        <div class="carrossel-container">
+          <img src="193339141_339628894345600_5214450596342544400_n.jpg" alt="img1" />
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+</body>
+
+</html>
